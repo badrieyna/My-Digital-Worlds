@@ -1,0 +1,192 @@
+/* Apply a consistent background color to all pages */
+body {
+  background-color: #E3BAC6;  /* light pink background */
+  font-family: 'Garamond', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+font-family: Garamond, sans-serif;
+margin: 0;
+padding: 0;
+}
+
+ body {
+      font-family: 'Garamond', Arial, sans-serif;
+      background-color: #E3BAC6;
+    }
+
+p {
+white-space: normal;
+word-wrap: break-word;
+}
+
+ul {
+list-style-type: none;
+margin: 0;
+padding: 1px;
+overflow: hidden;
+background-color: #333;
+}
+li {
+
+float: left;
+}
+
+li a {
+display: block;
+color: white;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+
+li a:hover {
+background-color: #ffc239;
+color: black;
+}
+
+li a.active {
+background-color: #ffc239;
+color: black;
+font-weight: bold;
+
+.popup {
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw; height: 100vh;
+  background-color: rgba(0,0,0,0.8);
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+/* Show only the popup that matches the URL target */
+.popup:target {
+  display: flex;
+}
+
+
+/* Header Section with Background Image */
+.banner img {
+  width: 100%;
+  height: auto;
+}
+
+/* Media Query for Smaller Screens */
+@media screen and (max-width: 768px) {
+  .banner img {
+    width: 100%;
+    height: auto;
+  }
+}
+/* Common column styles */
+.column {
+  float: left;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+/* Side column */
+.column.side {
+  width: 70%;
+}
+
+/* Main content column */
+.column.middle {
+  width: 30%;
+}
+
+/* Clear floats */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout for mobile */
+@media screen and (max-width: 768px) {
+  .column.side,
+  .column.middle {
+    width: 100%;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #fff8f0;
+  color: #333;
+}
+
+/* Header */
+.header {
+  background: linear-gradient(to right, #fcb69f, #ffecd2);
+  text-align: center;
+  padding: 50px 20px 30px;
+}
+
+.header h1 {
+  font-size: 2.8rem;
+  color: #ff4081;
+}
+
+.header p {
+  font-size: 1.2rem;
+  color: #444;
+}
+
+<img src="memory.jpg" style="width: 150px; border: 2px solid pink;" alt="Styled Image">
+
+
+body {
+  background-color: #121212;
+  color: #fff;
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 30px;
+  text-align: center;
+}
+
+.title {
+  font-size: 2.8rem;
+  color: #ff69b4;
+}
+
+.subtitle {
+  color: #bbb;
+  margin-bottom: 40px;
+}
+
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 20px;
+  background: #ff69b4;
+  color: white;
+  font-weight: bold;
+}
+
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+.footer a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: #ffc239;
+}

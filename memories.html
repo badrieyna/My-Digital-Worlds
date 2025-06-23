@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  	<title>My Memories</title>
+  	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <h1>✮ Digital Diary ✮</h1>
+    <p>Here for all the moments that made me smile, cry, and grow 🌟</p>
+  </header>
+
+  <!-- Image Gallery -->
+ <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
+  <section class="image-gallery">
+    <h2>📷 Memory Gallery</h2>
+    <div class="gallery-grid">
+      <figure>
+        <img src="images/Back View.jpeg" width="350" height="300" alt="Memory 1">
+        <figcaption>First time being a team leader that conduct a hiking program and manages workflows smoothly. ⛰️</figcaption>
+      </figure>
+      <figure>
+        <img src="images/Kayak.jpeg" width="350" height="300" alt="Memory 2">
+        <figcaption>Joining kayaking events with my club members at Tanjung Malim</figcaption>
+      </figure>
+      <figure>
+        <img src="images/matcha strawberry.jpeg" width="350" height="300" alt="Memory 3">
+        <figcaption>Moments when I went to a short trip with my childhood friends during our middle semester break</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- Video Section -->
+  <section class="video-section">
+    <h2>🎥 Video Shot</h2>
+    <div class="video-wrapper">
+      <video controls>
+        <source src="videos/Hiking Telipong.mp4" width="300" height="100" type="video/mp4">
+        Your browser does not support the video tag.
+       </video>
+      <p class="video-caption">A short video from when I when hiking at Bukit Telipong with my club members 💫</p>
+    </div>
+  </section>
+
+  <!-- Fixed Back to Home Button (Top Right) -->
+<a href="index.html" style="
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #ff69b4;
+  color: white;
+  padding: 10px 16px;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  z-index: 999;
+">
+  ⬅️ Home
+</a>
+
+<!-- Sticky Footer in a Box -->
+  <footer style="
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ffe6f0;
+    border-top: 2px solid #ff69b4;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 15px 10px;
+    font-size: 0.95rem;
+    color: #444;
+    z-index: 1000;
+  ">
+    &copy; 2025 b4drieyna. All rights reserved. |
+    📧 <a href="mailto:2023864614@student.uitm.edu.my" style="color: #ff1493; text-decoration: none;">2023864614@student.uitm.edu.my</a>
+  </footer>
+
+</body>
+</html>

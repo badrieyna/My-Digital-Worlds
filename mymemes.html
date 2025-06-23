@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>Me, In Memes</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <style>
+    body {
+      background-color: #E3BAC6;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 30px;
+    }
+
+    h1 {
+      font-size: 3rem;
+      color: #ff4081;
+      margin-bottom: 10px;
+    }
+
+    p.subtitle {
+      font-size: 1.2rem;
+      color: #555;
+      margin-bottom: 30px;
+    }
+
+    table {
+      margin: 0 auto;
+    }
+
+    td {
+      background-color: #C69DD2;
+      border-radius: 10px;
+      padding: 15px;
+      box-shadow: 2px 2px 6px #ccc;
+      width: 280px;
+    }
+
+    figure {
+      margin: 0;
+    }
+
+    img.meme {
+      width: 100%;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+
+    img.meme:hover {
+      transform: scale(1.05);
+    }
+
+    figcaption {
+      margin-top: 8px;
+      font-weight: bold;
+      color: #444;
+    }
+
+    /* Fullscreen Pop-up Styles */
+    .popup-img {
+      display: none;
+    }
+
+    .popup-img:checked + .overlay {
+      display: flex;
+    }
+
+    .overlay {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0, 0, 0, 0.85);
+      justify-content: center;
+      align-items: center;
+      display: none;
+      z-index: 999;
+    }
+
+    .overlay img {
+      max-width: 90%;
+      max-height: 90%;
+      border: 6px solid white;
+      border-radius: 12px;
+    }
+
+    .overlay label {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      font-size: 2rem;
+      color: white;
+      cursor: pointer;
+    }
+
+    footer {
+      margin-top: 40px;
+      font-size: 1rem;
+      color: #999;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Me , in Memes !</h1>
+  <p class="subtitle">Action speaks louder than words, in this case, memes describes me better than words can ♪⋆</p>
+
+  <!-- Meme Table -->
+  <table cellspacing="20">
+    <tr>
+      <td>
+        <figure>
+          <label for="popup1"><img src="images/money memes.jpeg" alt="Meme 1" class="meme"></label>
+          <figcaption>This is me on daily basis</figcaption>
+        </figure>
+      </td>
+      <td>
+        <figure>
+          <label for="popup2"><img src="images/face memes.jpeg" alt="Meme 2" class="meme"></label>
+          <figcaption>I'm nice okay .. come on, I don't bite so smile first</figcaption>
+        </figure>
+      </td>
+      <td>
+        <figure>
+          <label for="popup3"><img src="images/blush memes.jpeg" alt="Meme 3" class="meme"></label>
+          <figcaption>It is cute ! There's no such thing as blush blindness</figcaption>
+        </figure>
+      </td>
+      <td>
+        <figure>
+          <label for="popup2"><img src="images/talks memes.jpeg" alt="Meme 4" class="meme"></label>
+          <figcaption>Well .. no comment</figcaption>
+        </figure>
+      </td>
+      <td>
+        <figure>
+          <label for="popup3"><img src="images/mirror memes.jpeg" alt="Meme 5" class="meme"></label>
+          <figcaption>All about me and myself</figcaption>
+        </figure>
+      </td>
+    </tr>
+  </table>
+
+  <!-- Fullscreen Popups -->
+  <input type="checkbox" id="popup1" class="popup-img">
+  <div class="overlay">
+    <label for="popup1">&times;</label>
+    <img src="images/money memes.jpeg" alt="Meme 1 full">
+  </div>
+
+  <input type="checkbox" id="popup2" class="popup-img">
+  <div class="overlay">
+    <label for="popup2">&times;</label>
+    <img src="images/face memes.jpeg" alt="Meme 2 full">
+  </div>
+
+  <input type="checkbox" id="popup3" class="popup-img">
+  <div class="overlay">
+    <label for="popup3">&times;</label>
+    <img src="images/blush memes.jpeg" alt="Meme 3 full">
+  </div>
+
+ <input type="checkbox" id="popup4" class="popup-img">
+  <div class="overlay">
+    <label for="popup4">&times;</label>
+    <img src="images/talks memes.jpeg" alt="Meme 4 full">
+  </div>
+
+<input type="checkbox" id="popup5" class="popup-img">
+  <div class="overlay">
+    <label for="popup5">&times;</label>
+    <img src="images/mirror memes.jpeg" alt="Meme 5 full">
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    Source: Pinterest 💕
+  </footer>
+
+<!-- Fixed Back to Home Button (Top Right) -->
+<a href="index.html" style="
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #ff69b4;
+  color: white;
+  padding: 10px 16px;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  z-index: 999;
+">
+  ⬅️ Home
+</a>
+
+<!-- Sticky Footer in a Box -->
+  <footer style="
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ffe6f0;
+    border-top: 2px solid #ff69b4;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 15px 10px;
+    font-size: 0.95rem;
+    color: #444;
+    z-index: 1000;
+  ">
+    &copy; 2025 b4drieyna. All rights reserved. |
+    📧 <a href="mailto:2023864614@student.uitm.edu.my" style="color: #ff1493; text-decoration: none;">2023864614@student.uitm.edu.my</a>
+  </footer>
+
+</body>
+</html>
+

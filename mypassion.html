@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  	<title>My Passion</title>
+  	<link rel="stylesheet" href="style.css">
+<style>
+    body {
+      background-color: #E3BAC6;
+      color: #fff;
+      font-family: 'Garamond', sans-serif;
+      margin: 0;
+      padding: 30px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2.8rem;
+      color: #171123;
+    }
+
+    p.subtitle {
+      color: #ccc;
+      margin-bottom: 40px;
+    }
+
+    .grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .passion-box {
+      background-color: #2E4057;
+      padding: 30px 40px;
+      border: 2px solid #ff69b4;
+      border-radius: 12px;
+      color: #fff;
+      font-size: 1.2rem;
+      cursor: pointer;
+      text-shadow: 0 0 5px #ff69b4;
+      box-shadow: 0 0 10px #6290C8, 0 0 30px #ff69b4 inset;
+      transition: all 0.3s ease;
+      width: 180px;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .passion-box:hover {
+      background-color: #ff69b4;
+      color: #000;
+      box-shadow: 0 0 15px #fff, 0 0 40px #ff69b4;
+    }
+
+   /* Popup overlay hidden by default */
+    .popup {
+      display: none;
+      position: fixed;
+      top: 0; left: 0;
+      width: 100vw;
+      height: 100vh;
+      background-color: rgba(0,0,0,0.8);
+      justify-content: center;
+      align-items: center;
+      z-index: 999;
+    }
+
+    /* Show popup when anchor matches the ID */
+    .popup:target {
+      display: flex;
+    }
+
+    .popup-box {
+      background: white;
+      color: #333;
+      max-width: 400px;
+      padding: 30px;
+      border-radius: 16px;
+      box-shadow: 0 0 20px #ff69b4;
+      text-align: center;
+      position: relative;
+    }
+
+    .popup-box h2 {
+      margin-top: 0;
+    }
+
+    .close-btn {
+      margin-top: 20px;
+      display: inline-block;
+      background-color: #ff69b4;
+      color: white;
+      padding: 8px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .close-btn:hover {
+      background-color: #d61f7c;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🪼⋆. Things I Love .⋆🪼</h1>
+  <p class="subtitle">Click each box to explore what I love!</p>
+
+  <div class="grid">
+    <a href="#music" class="passion-box">🎵 Music</a>
+    <a href="#photograph" class="passion-box">📷 Photograph</a>
+    <a href="#nature" class="passion-box">🫧 Nature</a>
+    <a href="#travel" class="passion-box">✈️ Travel</a>
+  </div>
+
+  <!-- Popup 1 -->
+  <div id="music" class="popup">
+    <div class="popup-box">
+      <h2>🎵 Music</h2>
+      <p>I love any genre of music, as long as it suits my vibes. I often discover new songs, making playlists, and vibing to good beats.</p>
+      <a href="#" class="close-btn">Close</a>
+    </div>
+  </div>
+
+  <!-- Popup 2 -->
+  <div id="photograph" class="popup">
+    <div class="popup-box">
+      <h2>📷 Photograph</h2>
+      <p>I enjoy taking pictures, and keeping memories of anything that I found worths remembering. My pictures doesn't have to be aesthetically pleasing, because I know they worth whatever they are, even if some people thoughts of it as ugly pictures.</p>
+      <a href="#" class="close-btn">Close</a>
+    </div>
+  </div>
+
+  <!-- Popup 3 -->
+  <div id="nature" class="popup">
+    <div class="popup-box">
+      <h2>🫧 Nature</h2>
+      <p>I mean, who doesn't like nature ? It is so calming and beautiful. I always adore the majestic views of nature.</p>
+      <a href="#" class="close-btn">Close</a>
+    </div>
+  </div>
+
+  <!-- Popup 4 -->
+  <div id="travel" class="popup">
+    <div class="popup-box">
+      <h2>✈️ Travel</h2>
+      <p>I love exploring new places, trying their local food, and learning about their culture. It doesn't have to be far, as long as I feel free to explore then I consider them as traveling too.</p>
+      <a href="#" class="close-btn">Close</a>
+    </div>
+  </div>
+
+<!-- Fixed Back to Home Button (Top Right) -->
+<a href="index.html" style="
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #ff69b4;
+  color: white;
+  padding: 10px 16px;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  z-index: 999;
+">
+  ⬅️ Home
+</a>
+
+<!-- Sticky Footer in a Box -->
+  <footer style="
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ffe6f0;
+    border-top: 2px solid #ff69b4;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 15px 10px;
+    font-size: 0.95rem;
+    color: #444;
+    z-index: 1000;
+  ">
+    &copy; 2025 b4drieyna. All rights reserved. |
+    📧 <a href="mailto:2023864614@student.uitm.edu.my" style="color: #ff1493; text-decoration: none;">2023864614@student.uitm.edu.my</a>
+  </footer>
+
+</body>
+</html>
+

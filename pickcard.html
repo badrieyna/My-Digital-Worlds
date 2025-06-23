@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  	<title>Pick Your Card</title>
+	<link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Garamond', sans-serif;
+      background: #E3BAC6;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px 20px;
+    }
+
+    h1 {
+      margin-bottom: 30px;
+      color: #333;
+    }
+
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      width: 100%;
+      max-width: 1000px;
+    }
+
+    .card {
+      perspective: 1000px;
+      cursor: pointer;
+    }
+
+    .card-inner {
+      width: 100%;
+      padding-top: 125%; /* 4:5 aspect ratio */
+      position: relative;
+      transform-style: preserve-3d;
+      transition: transform 0.6s;
+    }
+
+    .card.flipped .card-inner {
+      transform: rotateY(180deg);
+    }
+
+    .card-front, .card-back {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      border-radius: 12px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      backface-visibility: hidden;
+      font-size: 1.2rem;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .card-front {
+      background-color: #DB2763;
+      color: white;
+    }
+
+    .card-back {
+      background-color: #ECDCC9;
+      color: #343a40;
+      transform: rotateY(180deg);
+      border: 2px dashed #dee2e6;
+    }
+
+    @media (hover: hover) {
+      .card:hover .card-inner {
+        transform: rotateY(180deg);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🃜🃚🃖 Pick Your Card ! 🃁🂭🂺</h1>
+
+  <div class="card-grid">
+    <div class="card" onclick="this.classList.toggle('flipped')">
+      <div class="card-inner">
+        <div class="card-front">❀ Flip Me ❀</div>
+        <div class="card-back">I am deeply in love with chocolates.</div>
+      </div>
+    </div>
+    <div class="card" onclick="this.classList.toggle('flipped')">
+      <div class="card-inner">
+        <div class="card-front">❀ Not her, Me ❀</div>
+        <div class="card-back">My bias in BTS K-Pop group is Jimin.</div>
+      </div>
+    </div>
+    <div class="card" onclick="this.classList.toggle('flipped')">
+      <div class="card-inner">
+        <div class="card-front">❀ Hey, Tap Here ❀</div>
+        <div class="card-back">Favorite song? Yeah nope, I changes it weekly 🎶</div>
+      </div>
+    </div>
+    <div class="card" onclick="this.classList.toggle('flipped')">
+      <div class="card-inner">
+        <div class="card-front">❀ Come on ! Try Me ❀</div>
+        <div class="card-back">I can go through the whole day without talking or interacting with anyone.</div>
+      </div>
+    </div>
+    <div class="card" onclick="this.classList.toggle('flipped')">
+      <div class="card-inner">
+        <div class="card-front">❀ Choose Me Bro ❀</div>
+        <div class="card-back">I was once broken my left shoulder while riding motorcycle.</div>
+      </div>
+    </div>
+    <div class="card" onclick="this.classList.toggle('flipped')">
+      <div class="card-inner">
+        <div class="card-front">❀ What about Me ❀</div>
+        <div class="card-back">If I were a drink, I’d be boba milk tea 🧋</div>
+      </div>
+   </div>
+<div class="card" onclick="this.classList.toggle('flipped')">
+      <div class="card-inner">
+        <div class="card-front">❀ Hi there ! Tap Me ❀</div>
+        <div class="card-back">My family are very well known in our place. Kinda make me uncomfortable actually.</div>
+      </div>
+    </div>
+    <div class="card" onclick="this.classList.toggle('flipped')">
+      <div class="card-inner">
+        <div class="card-front">❀ I Don't Mind Being Last ❀</div>
+        <div class="card-back">I hope my efforts are enough to pass this subject.</div>
+      </div>
+    </div>
+  </div>
+   
+<!-- Fixed Back to Home Button (Top Right) -->
+<a href="index.html" style="
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #ff69b4;
+  color: white;
+  padding: 10px 16px;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  z-index: 999;
+">
+  ⬅️ Home
+</a>
+
+<!-- Sticky Footer in a Box -->
+  <footer style="
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ffe6f0;
+    border-top: 2px solid #ff69b4;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 15px 10px;
+    font-size: 0.95rem;
+    color: #444;
+    z-index: 1000;
+  ">
+    &copy; 2025 b4drieyna. All rights reserved. |
+    📧 <a href="mailto:2023864614@student.uitm.edu.my" style="color: #ff1493; text-decoration: none;">2023864614@student.uitm.edu.my</a>
+  </footer>
+
+</body>
+</html>
